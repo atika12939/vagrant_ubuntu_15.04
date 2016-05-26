@@ -35,4 +35,7 @@ Vagrant.configure(2) do |config|
 
   # Set up editor and terminal
   config.vm.provision "shell", privileged: true, path: "scripts/init.sh"
+
+  # Set up nodejs
+  config.vm.provision "shell", privileged: true, path: "scripts/nodejs.sh"
 end
