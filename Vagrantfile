@@ -38,4 +38,8 @@ Vagrant.configure(2) do |config|
 
   # Set up nodejs
   config.vm.provision "shell", privileged: true, path: "scripts/nodejs.sh"
+
+  # Set up nodejs express
+  config.vm.provision "shell", privileged: true, path: "scripts/npm.sh"
+
 end
